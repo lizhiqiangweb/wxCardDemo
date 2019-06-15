@@ -1,0 +1,61 @@
+<view class='content'>
+  <view class='myProfile title'>
+    <view class='tit'>
+      <text>我的介绍</text>
+      <view class='num'>
+        <label>{{numCount}} / </label>
+        <label>400</label>
+      </view>
+    </view>
+    <textarea bindinput='articlesIndex' maxlength='400' placeholder='请输入自我介绍内容'></textarea>
+  </view>
+</view>
+<!-- img上传 -->
+<view class='content'>
+  <view class='title myImg'>
+    <view class='tit'>
+      <text>我的照片</text>
+      <view class='num'>
+        <label>{{imgCount}} / </label>
+        <label>9</label>
+      </view>
+    </view>
+    <view class='imgList'>
+      <!-- 预览图片 -->
+      <block wx:for="{{pics}}" wx:for-item="image" wx:key='index'>
+        <view class="">
+          <image class="addImg" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+          <view class="delete" bindtap="deleteImg" data-index="{{index}}">X</view>
+        </view>
+      </block>
+      <!-- 上传图片btn -->
+      <view wx:if="{{isShow}}" bindtap='chooseImage' class='add-img'>
+        <text>+</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 视频上传 -->
+<view class='content'>
+  <view class='title myImg vedio'>
+    <view class='tit'>
+      <text>我的视频</text>
+      <view class='num'>
+        <label>{{videoCount}} / </label>
+        <label>9</label>
+      </view>
+    </view>
+    <view class='vedioList'>
+      <!-- 预览视频 -->
+      <block wx:for="{{videos}}" wx:for-item="video" wx:key='index'>
+        <video class="addVedio" bindfullscreenchange="bindVideoScreenChange" src="{{video}}" data-src="{{video}}" bindtap="previewVedio" ></video>
+        <view class="deleteV" bindtap="deleteVedio" data-index="{{index}}">X</view>
+      </block>
+      <view wx:if="{{isShow1}}" class='add-img' bindtap='chooseVideo'>
+        <text>+</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- btn -->
+<button class='addCardBtn'>保存</button>

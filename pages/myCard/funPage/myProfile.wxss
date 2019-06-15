@@ -1,0 +1,116 @@
+.content {
+  display: flex;
+  margin-top: 34rpx;
+  justify-content: center;
+}
+.title {
+  margin: 0 0 12rpx 36rpx;
+  width: 100%;
+}
+.title text {
+  font-size: 16px;
+  color: #333;
+}
+.title label {
+  font-size: 14px;
+  color: #666;
+}
+.tit {
+  height: 27rpx;
+  line-height: 27rpx;
+  width: 90%;
+}
+.tit::after {
+  content: '';
+  display: block;
+  clear: both;
+  width: 0;
+  height: 0;
+}
+.num {
+  float: right;
+}
+.myProfile textarea {
+  border: 1px solid #999;
+  font-size: 14px;
+  margin: 24rpx 0 0 0;
+  border-radius: 8rpx;
+  padding: 8rpx 8rpx 0;
+  height: auto !important;
+  min-height: 300rpx;
+  width: 654rpx;
+}
+/* img上传 */
+.imgList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+}
+.add-img {
+  width: 200rpx;
+  height: 200rpx;
+  background: rgba(244, 244, 244, .8);
+  margin: 24rpx 0 0 0;
+}
+.add-img text {
+  display: flex;
+  justify-content: center;
+  height: 200rpx;
+  line-height: 200rpx;
+  font-size: 42px;
+}
+.addImg {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 24rpx 12rpx 0 0;
+}
+.delete {
+  position: relative;
+  top: -209rpx;
+  left: 166rpx;
+  font-size: 12px;
+  background: #333;
+  width: 34rpx;
+  height: 34rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 24rpx;
+}
+/* vedioList */
+.vedioList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+}
+.deleteV {
+  position: relative;
+  top: 24rpx;
+  left: -39rpx;
+  font-size: 12px;
+  background: #333;
+  width: 34rpx;
+  height: 34rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 24rpx;
+}
+.addVedio {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 24rpx -12rpx 0 0;
+}
+/* btn */
+.addCardBtn {
+  border-radius: 5px;
+  width: 82%;
+  height: 38px;
+  line-height: 38px;
+  background-color: #076cc4;
+  color: #fff;
+  margin: 12px auto 44rpx;
+  box-shadow: 1px 1px 8rpx #999;
+}

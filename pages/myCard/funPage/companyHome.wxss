@@ -1,0 +1,2 @@
+@import "myProfile.wxss";
+@import "companyCase.wxss";

@@ -1,0 +1,144 @@
+/* noCard内容 */
+.addCardBtn {
+  border-radius: 5px;
+  width: 80%;
+  height: 38px;
+  line-height: 38px;
+  background-color: #076cc4;
+  color: #fff;
+  margin: 12px auto 0;
+}
+.noCard {
+  background: #fff;
+  padding-bottom: 186rpx;
+}
+/* myCard内容 */
+
+page {
+  width: 100%;
+  background: #efefef;
+}
+
+.news-item2 image {
+  width: 20rpx;
+  height: 22rpx;
+  margin-right: 10rpx;
+}
+.news-item text {
+  font-size: 12px;
+  color: #666;
+}
+.add_img {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.content-top {
+  width: 90%;
+  margin: 24rpx auto 64rpx;
+  border: 1px solid #ddd;
+  border-radius: 14rpx;
+  box-shadow: 1px 1px 8rpx #ddd;
+  padding-top: 32rpx;
+  padding-bottom: 42rpx;
+  background: #fff;
+  height: 300rpx;
+}
+
+.top {
+  /* display: flex; */
+  width: 90%;
+  margin: 0 auto;
+}
+.top::after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
+.main-top {
+  float: left;
+}
+.main-right {
+  float: right;
+}
+
+.bottom {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.news {
+  font-size: 12px;
+  color: #666;
+}
+.news:last-child {
+  margin: 12rpx 0 0 0;
+}
+/* bottom */
+
+.content-bottom {
+  background: #fff;
+  border-radius: 12rpx;
+  height: 670rpx;
+}
+
+.funBtn {
+  display: flex;
+  justify-content: center;
+  padding-top: 32rpx;
+}
+
+.btnItem {
+  margin-right: 54rpx;
+}
+
+.btnItem:last-child {
+  margin-right: 0;
+}
+
+.btnItem image {
+  width: 68rpx;
+  height: 68rpx;
+  display: block;
+  margin: 0 auto 12rpx;
+}
+
+.btnItem view {
+  font-size: 15px;
+}
+
+.postCard {
+  margin: 124rpx auto 0;
+  height: 82rpx;
+  line-height: 82rpx;
+  box-shadow: 1rpx 4rpx 5rpx #999;
+}
+
+.addCard {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin: 52rpx 0 0 0;
+  padding-bottom: 194rpx;
+}
+
+.addCard text {
+  display: inline-block;
+  border: 1px solid #116299;
+  border-radius: 50%;
+  padding: 6rpx 6rpx;
+  width: 22rpx;
+  height: 22rpx;
+  line-height: 22rpx;
+  margin-right: 12rpx;
+}
+
+/* swiper */

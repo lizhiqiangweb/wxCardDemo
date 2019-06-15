@@ -1,0 +1,13 @@
+@import "myProfile.wxss";
+.title input {
+  border: 1px solid #999;
+  margin: 12rpx 0 0 0;
+  height: 68rpx;
+  line-height: 68rpx;
+  padding-left: 12rpx;
+  border-radius: 6rpx;
+  font-size: 14px;
+  color: #333;
+  width: 92%;
+}
+

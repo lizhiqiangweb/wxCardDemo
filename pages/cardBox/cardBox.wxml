@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class='containe'>
+  <view class='cardBox' wx:if="{{show}}">
+    <view class='tit'>我的名片</view>
+    <!-- cardItem -->
+    <view class='cardBox-item'>
+      <view class='btnTo' bindtap='go' data-url='cardDetails'></view>
+      <view class='box'>
+        <view class='content-left'>
+          <view class='main-top'>
+            <view class='name'>{{ name }}</view>
+            <text class='news'>{{ post}}</text>
+            <view class='news'>{{ company }}</view>
+          </view>
+          <view class='main-right'>
+            <image class='add_img' src='../../images/add_img.png'></image>
+          </view>
+          <view class='clear'></view>
+          <view class='main-bottom'>
+            <view class='news-item2'>
+              <view class='news-item'>
+                <view class='news-item'>
+                  <image src='../../images/phone_icon.png'></image>
+                  <text>{{phone}}</text>
+                </view>
+                <view class='news-item'>
+                  <image src='../../images/email_icon.png'></image>
+                  <text>{{email}}</text>
+                </view>
+                <view class='news-item'>
+                  <image src='../../images/address_icon.png'></image>
+                  <text>{{address}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='content-right'>
+          <view class='name1'>{{name}}</view>
+          <text class='news-right'>{{post}}</text>
+          <view class='news-right'>{{company}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- cardItem -->
+    
+  </view>
+</view>

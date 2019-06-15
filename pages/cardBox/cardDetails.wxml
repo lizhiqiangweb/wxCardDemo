@@ -1,0 +1,108 @@
+<!-- newsBox -->
+<view class='content'>
+  <view class='newsBox'>
+    <view class='news-item1'>
+      <view class='news-item11'>
+        <view class='name'>
+          <label>姓名</label>
+          <text>{{name}}</text>
+        </view>
+        <view class='news-item'>
+          <label>职务/部门</label>
+          <text>{{post}}</text>
+        </view>
+        <view class='news-item'>
+          <label>公司/单位</label>
+          <text>{{company}}</text>
+        </view>
+      </view>
+      <form bindtap='openImg'>
+        <image class='add_img' src='{{addImgUrl}}'></image>
+      </form>
+    </view>
+    <view class='news-item2'>
+      <view class='news-item'>
+        <image src='../../images/phone_icon.png'></image>
+        <label>手机号码</label>
+        <text>{{phone}}</text>
+      </view>
+      <view class='news-item'>
+        <image src='../../images/email_icon.png'></image>
+        <label>电子邮箱</label>
+        <text>{{email}}</text>
+      </view>
+      <view class='news-item'>
+        <image src='../../images/address_icon.png'></image>
+        <label>详细地址</label>
+        <text>{{address}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- contact -->
+<view class='content'>
+  <view class='contact'>
+    <text>查看联系方式</text>
+  </view>
+</view>
+<view class='content'>
+  <view class='contact-box'>
+    <view class='contact-tit'>快速联系</view>
+    <view class='contactBtn'>
+      <view class='contactBtn-item' wx:for="{{contactBtn}}" wx:for-item="item" wx:key="id">
+        <image id='{{item.id}}' bindtap='go' src='{{item.iconUrl}}'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- myProfile -->
+<view class='content'>
+  <view class='contact-box profile'>
+    <view class='contact-tit'>个人简介</view>
+    <view class='myProfile'>
+      <text>我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙我叫陈芸熙。</text>
+      <view class='count'>{{numCount}} / 400</view>
+      <view class='clear'></view>
+      <view class='profileList'>
+        <image wx:for="{{profileList}}" wx:for-item="item" wx:key="index" src='{{item}}'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- companyHome -->
+<view class='content'>
+  <view class='contact-box profile'>
+    <view class='contact-tit'>企业主页</view>
+    <view class='comanyProfile'>
+      <view class='comanyProfile-top'>
+        <image class='logo' src='../../images/logo.png'></image>
+        <view class='tit-main'>
+          <view class='tit-title'>长沙腾庆网络科技有限公司</view>
+          <view class='tit-content'>腾庆网络科技是一家可独立制作微信小程序、制作网页、完成app开发及研发各种实用软件，提供不同行业的行业服务，致力于通过产品和服务，助力各企业向智能商业转型升级，用技术驱动商业革新，帮助企业、商铺更好的引流和管理，让其推广和运营更高效、便捷。</view>
+        </view>
+      </view>
+      <view style='font-size: 14px; margin: 24rpx auto'>公司官网：</view>
+      <view class='codeList'>
+        <view class='code-item' wx:for="{{codeList}}" wx:for-item="item" wx:key="index">
+          <image src='{{item.imgUrl}}'></image>
+          <text>{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- companyCase -->
+<view class='content'>
+  <view class='contact-box profile'>
+    <view class='contact-tit'>行业案例</view>
+    <view class='comanyProfile'>
+      <view class='comanyProfile-top'>
+        <image class='caseImg' src='../../images/caseImg.png'></image>
+        <view class='tit-main'>
+          <view class='tit-title'>名称：卡诺亚小程序</view>
+          <view class='tit-content'>主营业务：包括衣柜、书柜、厨柜、衣帽间、电视柜、酒柜、餐厅柜、门厅柜、鞋柜、护墙系统、木门系统等全屋定制家居和配套家居。</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

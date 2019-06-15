@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<view class=''>
+  <view class='noCard' wx:if="{{noCard}}">
+    <image style='width: 100%; height: 872rpx;' src='../../images/loading_img.png'></image>
+    <button data-url="../cardBox/newCard" form-type="submit" bindtap='go' class='center addCardBtn'>点击创建电子名片</button>
+  </view>
+  <view class='myCard' wx:if="{{showCard}}">
+    <swiper class='content-top' indicator-dots="{{indicatorDots}}" indicator-active-color='{{indicatoractiveColor}}' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper-item>
+        <view class='top'>
+          <view class='main-top'>
+            <view class='name'>{{ name }}</view>
+            <text class='news'>{{ post}}</text>
+            <view class='news'>{{ company }}</view>
+          </view>
+          <view class='main-right'>
+            <image class='add_img' src='../../images/add_img.png'></image>
+          </view>
+        </view>
+        <view class='bottom'>
+          <view class='news-item2'>
+            <view class='news-item'>
+              <view class='news-item'>
+                <image src='../../images/phone_icon.png'></image>
+                <text>{{phone}}</text>
+              </view>
+              <view class='news-item'>
+                <image src='../../images/email_icon.png'></image>
+                <text>{{email}}</text>
+              </view>
+              <view class='news-item'>
+                <image src='../../images/address_icon.png'></image>
+                <text>{{address}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+    <view class='content-bottom'>
+      <view class='funBtn'>
+        <view class='btnItem'>
+          <image bindtap='go' data-url="./funPage/editCard" src='../../images/btnItem1.png'></image>
+          <view bindtap='go' data-url="./funPage/editCard">名片修改</view>
+        </view>
+        <view class='btnItem'>
+          <image bindtap='go' data-url="./funPage/myProfile" src='../../images/btnItem2.png'></image>
+          <view bindtap='go' data-url="./funPage/myProfile">个人简介</view>
+        </view>
+        <view class='btnItem'>
+          <image bindtap='go' data-url="./funPage/companyHome" src='../../images/btnItem3.png'></image>
+          <view>企业主页</view>
+        </view>
+        <view class='btnItem'>
+          <image bindtap='go' data-url="./funPage/companyCase" src='../../images/btnItem4.png'></image>
+          <view>行业案例</view>
+        </view>
+      </view>
+      <button open-type="share" class='postCard addCardBtn'>发送这张名片</button>
+      <view class='addCard'>
+        <view bindtap='go' data-url="../cardBox/newCard">
+          <text>+</text>新增我的名片</view>
+      </view>
+    </view>
+  </view>
+</view>
